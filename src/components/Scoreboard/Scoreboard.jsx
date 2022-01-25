@@ -1,11 +1,16 @@
 import React from 'react';
+import {
+  BestScore,
+  CurrentScore,
+  ScoreboardStyled,
+} from '../../styles/ScoreboardStyled';
 
 function Scoreboard({ bestScore, currentScore }) {
   return (
-    <div>
-      <span>Best Score: {bestScore}</span>
-      <span>Current Score: {currentScore}</span>
-    </div>
+    <ScoreboardStyled>
+      <BestScore>Best Score: {bestScore}</BestScore>
+      <CurrentScore>Current Score: {currentScore}</CurrentScore>
+    </ScoreboardStyled>
   );
 }
 

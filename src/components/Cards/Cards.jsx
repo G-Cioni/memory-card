@@ -1,5 +1,6 @@
-import Card from './Card';
 import React, { useState, useEffect } from 'react';
+import { CardsStyled } from '../../styles/CardsStyled';
+import Card from './Card';
 
 function Cards({ cardsIdArray }) {
   const [allCards, setAllCards] = useState([]);
@@ -14,7 +15,7 @@ function Cards({ cardsIdArray }) {
     if (!allCards[0]) setAllCards(allCardsArray);
   }, [allCards, cardsIdArray]);
 
-  return <div>{allCards}</div>;
+  return <CardsStyled>{allCards}</CardsStyled>;
 }
 
 export default Cards;

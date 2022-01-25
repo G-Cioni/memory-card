@@ -1,4 +1,5 @@
 import React from 'react';
+import { Description, NavBarStyled, Title } from '../../styles/NavbarStyled';
 import Scoreboard from '../Scoreboard/Scoreboard';
 
 function NavBar({ bestScore, currentScore }) {
@@ -6,11 +7,11 @@ function NavBar({ bestScore, currentScore }) {
   const description = `Get points by clicking on an image 
                        but don't click on any more than once!`;
   return (
-    <div>
-      <h1>{title}</h1>
-      <span>{description}</span>
+    <NavBarStyled>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
       <Scoreboard bestScore={bestScore} currentScore={currentScore} />
-    </div>
+    </NavBarStyled>
   );
 }
 
