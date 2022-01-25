@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function Cards() {
-  return;
+  const [allCards, setAllCards] = useState([]);
+  return <div>{allCards}</div>;
 }
 
 export default Cards;

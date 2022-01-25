@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function Scoreboard() {
-  return;
+function Scoreboard({ bestScore, currentScore }) {
+  return (
+    <div>
+      <span>Best Score: {bestScore}</span>
+      <span>Current Score: {currentScore}</span>
+    </div>
+  );
 }
 
 export default Scoreboard;

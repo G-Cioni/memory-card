@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function Card() {
-  return;
+function Card({ cardDescription, imgSource }) {
+  return (
+    <div>
+      <img src={imgSource} alt={cardDescription} />
+      <span>{cardDescription}</span>
+    </div>
+  );
 }
 
 export default Card;
