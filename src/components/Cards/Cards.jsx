@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import Card from './Card';
+import React, { useState, useEffect } from 'react';
 
-function Cards() {
+function Cards({ cardsIdArray }) {
   const [allCards, setAllCards] = useState([]);
+
+  // Generates the list of cards which will be rendered
+  useEffect(() => {
+    console.log(cardsIdArray);
+    const allCardsArray = Object.keys(cardsIdArray).map((name) => {
+      const { id, cardName } = cardsIdArray[name];
+      return <Card key={id} cardName={cardName}></Card>;
+    });
+    if (!allCards[0]) setAllCards(allCardsArray);
+  }, [allCards, cardsIdArray]);
+
   return <div>{allCards}</div>;
 }
 
