@@ -4,7 +4,6 @@ function Card({ cardName, imgSource }) {
   return (
     <div>
       <img src={imgSource} alt={cardName} />
-      <span>{cardName}</span>
     </div>
   );
 }
