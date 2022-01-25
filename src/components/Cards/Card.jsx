@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Card({ cardDescription, imgSource }) {
+function Card({ cardName, imgSource }) {
   return (
     <div>
-      <img src={imgSource} alt={cardDescription} />
-      <span>{cardDescription}</span>
+      <img src={imgSource} alt={cardName} />
+      <span>{cardName}</span>
     </div>
   );
 }
