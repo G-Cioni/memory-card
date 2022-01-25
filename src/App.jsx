@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from 'react';
+import { AppStyled } from './styles/AppStyled';
 import Cards from './components/Cards/Cards';
 import Navbar from './components/NavBar/NavBar';
-import React, { useState, useEffect } from 'react';
 import uniqid from 'uniqid';
 
 function App() {
@@ -36,10 +37,10 @@ function App() {
   }, [cardNames, numberOfCards]);
 
   return (
-    <div>
+    <AppStyled>
       <Navbar bestScore={bestScore} currentScore={currentScore}></Navbar>
       <Cards cardsIdArray={cardsIdArray}></Cards>
-    </div>
+    </AppStyled>
   );
 }
 
