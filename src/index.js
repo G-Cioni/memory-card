@@ -9,6 +9,7 @@ const theme = {
   queenBlue: '#476C9B',
   uranianBlue: '#ADD9F4',
   cordovan: '#984447',
+  fontFamily: 'sans-serif',
 };
 
 ReactDOM.render(
