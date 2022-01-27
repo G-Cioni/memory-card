@@ -9,9 +9,11 @@ function Cards({ cardsIdArray }) {
   // Generates the list of cards which will be rendered
   useEffect(() => {
     console.log(cardsIdArray);
-    const allCardsArray = Object.keys(cardsIdArray).map((name) => {
+    const allCardsArray = Object.keys(cardsIdArray).map((name, index) => {
       const { id, cardName } = cardsIdArray[name];
-      return <Card key={id} cardName={cardName}></Card>;
+      return (
+        <Card key={id} cardName={cardName} imgSource={images[index]}></Card>
+      );
     });
     if (!allCards[0]) setAllCards(allCardsArray);
   }, [allCards, cardsIdArray]);
