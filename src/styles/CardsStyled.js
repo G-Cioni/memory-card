@@ -6,7 +6,7 @@ export const CardsStyled = styled.div`
   grid-gap: 2em;
   grid-template-columns: repeat(4, 1fr);
   margin: 1em;
-  margin: 3em auto;
+  margin: 2em auto;
   width: max-content;
 
   @media (max-width: 1060px) {
