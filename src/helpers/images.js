@@ -1,15 +1,15 @@
-import bulma from '../../src/images/bulma.jpg';
-import cell from '../../src/images/cell.jpg';
-import chiChi from '../../src/images/chi-chi.jpg';
-import frieza from '../../src/images/frieza.jpg';
-import gohan from '../../src/images/gohan.jpg';
-import goku from '../../src/images/goku.jpg';
-import goten from '../../src/images/goten.jpg';
-import majinBuu from '../../src/images/majin-buu.jpg';
-import mrSatan from '../../src/images/mr-satan.jpg';
-import junior from '../../src/images/junior.jpg';
-import trunks from '../../src/images/trunks.jpg';
-import vegeta from '../../src/images/vegeta.jpg';
+import bulma from '../../src/images/bulma.png';
+import cell from '../../src/images/cell.png';
+import frieza from '../../src/images/frieza.png';
+import gohan from '../../src/images/gohan.png';
+import goku from '../../src/images/goku.png';
+import junior from '../../src/images/junior.png';
+import krillin from '../../src/images/krillin.png';
+import majinBuu from '../../src/images/majin-buu.png';
+import mrSatan from '../../src/images/mr-satan.png';
+import pan from '../../src/images/pan.png';
+import trunks from '../../src/images/trunks.png';
+import vegeta from '../../src/images/vegeta.png';
 import uniqid from 'uniqid';
 
 export const images = {
@@ -21,11 +21,6 @@ export const images = {
   cell: {
     name: 'Cell',
     image: cell,
-    id: uniqid(),
-  },
-  chiChi: {
-    name: 'Chi-Chi',
-    image: chiChi,
     id: uniqid(),
   },
   frieza: {
@@ -43,9 +38,14 @@ export const images = {
     image: goku,
     id: uniqid(),
   },
-  goten: {
-    name: 'Goten',
-    image: goten,
+  junior: {
+    name: 'Junior',
+    image: junior,
+    id: uniqid(),
+  },
+  krillin: {
+    name: 'Krillin',
+    image: krillin,
     id: uniqid(),
   },
   majinBuu: {
@@ -58,9 +58,9 @@ export const images = {
     image: mrSatan,
     id: uniqid(),
   },
-  junior: {
-    name: 'Junior',
-    image: junior,
+  pan: {
+    name: 'Pan',
+    image: pan,
     id: uniqid(),
   },
   trunks: {
