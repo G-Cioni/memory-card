@@ -1,19 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { CardsStyled } from '../../styles/CardsStyled';
 import Card from './Card';
 import { images } from '../../helpers/images';
 
 function Cards() {
   const [allCards, setAllCards] = useState([]);
+  const [randomNumbers, setRandomNumbers] = useState([]);
 
-  // Generates the list of cards which will be rendered
+  // Sets random numbers
+  const randomizeNumbers = useCallback(() => {
+    const randomNumbersArray = [];
+
+    for (let i = 0; i < Object.keys(images).length; i++) {
+      randomNumbersArray.push(Math.random());
+    }
+    setRandomNumbers(randomNumbersArray);
+  }, []);
+
+  // Generates and randomly sorts cards which will be rendered
   useEffect(() => {
-    const allCardsArray = Object.keys(images).map((cardName, index) => {
-      const { id, name, image } = images[cardName];
-      return <Card key={id} name={name} imgSource={image}></Card>;
-    });
-    if (!allCards[0]) setAllCards(allCardsArray);
-  }, [allCards]);
+    if (!randomNumbers[0]) randomizeNumbers();
+
+    const allCardsTemp = Object.keys(images)
+      .map((cardName, index) => {
+        const { id, name, image } = images[cardName];
+        return (
+          <Card
+            key={id}
+            name={name}
+            imgSource={image}
+            randomNumber={randomNumbers[index]}
+            onClick={randomizeNumbers}
+          ></Card>
+        );
+      })
+      .sort((a, b) => (a.props.randomNumber < b.props.randomNumber ? 1 : -1));
+
+    setAllCards(allCardsTemp);
+  }, [randomNumbers, randomizeNumbers]);
 
   return <CardsStyled>{allCards}</CardsStyled>;
 }
