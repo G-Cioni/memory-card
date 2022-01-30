@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CardsStyled } from '../../styles/CardsStyled';
 import Card from './Card';
-import images from './';
+import { images } from '../../helpers/images';
 
 function Cards() {
   const [allCards, setAllCards] = useState([]);
