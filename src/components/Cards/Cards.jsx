@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { CardsStyled } from '../../styles/CardsStyled';
 import Card from './Card';
+import images from './';
 
-function Cards({ cardsIdArray }) {
+function Cards() {
   const [allCards, setAllCards] = useState([]);
 
   // Generates the list of cards which will be rendered
   useEffect(() => {
-    console.log(cardsIdArray);
-    const allCardsArray = Object.keys(cardsIdArray).map((name) => {
-      const { id, cardName } = cardsIdArray[name];
-      return <Card key={id} cardName={cardName}></Card>;
+    const allCardsArray = Object.keys(images).map((cardName, index) => {
+      const { id, name, image } = images[cardName];
+      return <Card key={id} name={name} imgSource={image}></Card>;
     });
     if (!allCards[0]) setAllCards(allCardsArray);
-  }, [allCards, cardsIdArray]);
+  }, [allCards]);
 
   return <CardsStyled>{allCards}</CardsStyled>;
 }
