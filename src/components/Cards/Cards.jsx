@@ -3,7 +3,7 @@ import { CardsStyled } from '../../styles/CardsStyled';
 import Card from './Card';
 import { images } from '../../helpers/images';
 
-function Cards() {
+function Cards({ updateTimesClicked }) {
   const [allCards, setAllCards] = useState([]);
   const [randomNumbers, setRandomNumbers] = useState([]);
 
@@ -28,16 +28,18 @@ function Cards() {
           <Card
             key={id}
             name={name}
+            nameId={cardName}
             imgSource={image}
             randomNumber={randomNumbers[index]}
-            onClick={randomizeNumbers}
+            randomizeNumbers={randomizeNumbers}
+            updateTimesClicked={updateTimesClicked}
           ></Card>
         );
       })
       .sort((a, b) => (a.props.randomNumber < b.props.randomNumber ? 1 : -1));
 
     setAllCards(allCardsTemp);
-  }, [randomNumbers, randomizeNumbers]);
+  }, [randomNumbers, randomizeNumbers, updateTimesClicked]);
 
   return <CardsStyled>{allCards}</CardsStyled>;
 }
