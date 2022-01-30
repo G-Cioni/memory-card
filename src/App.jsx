@@ -5,7 +5,7 @@ import Navbar from './components/NavBar/NavBar';
 import { timesClickedObj } from './helpers/timesClickedObj';
 
 function App() {
-  const [bestScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
   const [timesClicked, setTimesClicked] = useState(timesClickedObj);
 
@@ -30,6 +30,11 @@ function App() {
       setTimesClicked(timesClickedObj);
     }
   }, [timesClicked]);
+
+  // Updates bestScore when currentScore is higher
+  useEffect(() => {
+    if (currentScore > bestScore) setBestScore(currentScore);
+  }, [bestScore, currentScore]);
 
   return (
     <AppStyled>
