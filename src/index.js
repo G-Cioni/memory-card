@@ -1,7 +1,7 @@
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const theme = {
   richBlack: '#101419',
@@ -10,11 +10,19 @@ const theme = {
   uranianBlue: '#ADD9F4',
   cordovan: '#984447',
   fontFamily: 'sans-serif',
+  borderRadius: '.5em',
+  boxShadow: '1px 1px 5px black',
 };
+
+const GlobalStyles = createGlobalStyle`
+body {
+  background-color: ${(props) => props.theme.steelTeal}
+}`;
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <App />
     </ThemeProvider>
   </React.StrictMode>,
