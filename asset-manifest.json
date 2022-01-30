@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.55bb7125.js",
-    "static/media/trunks.jpg": "/static/media/trunks.a665e732c0e499f8830e.jpg",
-    "static/media/goku.jpg": "/static/media/goku.2d56a2b5118695c52986.jpg",
-    "static/media/goten.jpg": "/static/media/goten.94b3e5f4e0501936e445.jpg",
-    "static/media/frieza.jpg": "/static/media/frieza.086bf2caec68f94c6bb3.jpg",
-    "static/media/junior.jpg": "/static/media/junior.50643020b950a74dd5ff.jpg",
-    "static/media/cell.jpg": "/static/media/cell.635f23b0a88bf237ce93.jpg",
-    "static/media/gohan.jpg": "/static/media/gohan.934be4ec79cb014068db.jpg",
-    "static/media/vegeta.jpg": "/static/media/vegeta.a2ebb5b6b8204ea5997b.jpg",
-    "static/media/mr-satan.jpg": "/static/media/mr-satan.fd1230f2bcb93ea5ab8c.jpg",
-    "static/media/bulma.jpg": "/static/media/bulma.1bb3a211f664dfec0883.jpg",
-    "static/media/majin-buu.jpg": "/static/media/majin-buu.c869c152c0cac65db681.jpg",
-    "static/media/chi-chi.jpg": "/static/media/chi-chi.3582bf4672faab0f9f23.jpg",
-    "index.html": "/index.html",
-    "main.55bb7125.js.map": "/static/js/main.55bb7125.js.map"
+    "main.js": "/memory-card/static/js/main.6e84fd38.js",
+    "static/media/trunks.jpg": "/memory-card/static/media/trunks.a665e732c0e499f8830e.jpg",
+    "static/media/goku.jpg": "/memory-card/static/media/goku.2d56a2b5118695c52986.jpg",
+    "static/media/goten.jpg": "/memory-card/static/media/goten.94b3e5f4e0501936e445.jpg",
+    "static/media/frieza.jpg": "/memory-card/static/media/frieza.086bf2caec68f94c6bb3.jpg",
+    "static/media/junior.jpg": "/memory-card/static/media/junior.50643020b950a74dd5ff.jpg",
+    "static/media/cell.jpg": "/memory-card/static/media/cell.635f23b0a88bf237ce93.jpg",
+    "static/media/gohan.jpg": "/memory-card/static/media/gohan.934be4ec79cb014068db.jpg",
+    "static/media/vegeta.jpg": "/memory-card/static/media/vegeta.a2ebb5b6b8204ea5997b.jpg",
+    "static/media/mr-satan.jpg": "/memory-card/static/media/mr-satan.fd1230f2bcb93ea5ab8c.jpg",
+    "static/media/bulma.jpg": "/memory-card/static/media/bulma.1bb3a211f664dfec0883.jpg",
+    "static/media/majin-buu.jpg": "/memory-card/static/media/majin-buu.c869c152c0cac65db681.jpg",
+    "static/media/chi-chi.jpg": "/memory-card/static/media/chi-chi.3582bf4672faab0f9f23.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.6e84fd38.js.map": "/memory-card/static/js/main.6e84fd38.js.map"
   },
   "entrypoints": [
-    "static/js/main.55bb7125.js"
+    "static/js/main.6e84fd38.js"
   ]
 }
