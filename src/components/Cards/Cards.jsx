@@ -6,6 +6,7 @@ import { images } from '../../helpers/images';
 function Cards({ updateTimesClicked }) {
   const [allCards, setAllCards] = useState([]);
   const [randomNumbers, setRandomNumbers] = useState([]);
+  const [scroll, setScroll] = useState(0);
 
   // Sets random numbers
   const randomizeNumbers = useCallback(() => {
@@ -39,8 +40,20 @@ function Cards({ updateTimesClicked }) {
       .sort((a, b) => (a.props.randomNumber < b.props.randomNumber ? 1 : -1));
 
     setAllCards(allCardsTemp);
-  }, [randomNumbers, randomizeNumbers, updateTimesClicked]);
+  }, [randomNumbers, randomizeNumbers, scroll, updateTimesClicked]);
 
+  useEffect(() => {
+    document.addEventListener('scroll', () => setScroll(window.scrollY));
+    return document.removeEventListener(
+      'scroll',
+      () => window.scrollY !== 0 && setScroll(window.scrollY),
+    );
+  }, []);
+
+  useEffect(() => {
+    console.log(window.scrollY, scroll);
+    window.scrollTo(0, scroll);
+  });
   return <CardsStyled>{allCards}</CardsStyled>;
 }
 
