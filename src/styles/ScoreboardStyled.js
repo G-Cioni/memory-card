@@ -5,6 +5,9 @@ export const ScoreboardStyled = styled.div`
   flex-direction: column;
   grid-area: scoreboard;
   justify-self: center;
+  @media (max-width: 815px) {
+    margin-top: 2em;
+  }
 `;
 export const BestScore = styled.span`
   font-size: 1.5em;

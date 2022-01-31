@@ -9,14 +9,14 @@ export const CardsStyled = styled.div`
   margin: 2em auto;
   width: max-content;
 
-  @media (max-width: 1130px) {
+  @media (max-width: 1230px) {
     grid-template-columns: repeat(4, 1fr);
   }
-  @media (max-width: 745px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 815px) {
     grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 535px) {
+  @media (max-width: 573px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;
