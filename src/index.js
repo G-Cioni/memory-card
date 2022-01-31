@@ -10,7 +10,7 @@ const theme = {
   cardBgColor: '#ADD9F4',
   fontColor: '#101419',
   fontFamily: 'sans-serif',
-  navBgColor: '#984447',
+  secondaryColor: '#984447',
 };
 
 const GlobalStyles = createGlobalStyle`
