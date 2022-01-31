@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const theme = {
-  appBgColor: '#476C9B',
+  appBgColor: '#4059AD',
   borderRadius: '.5em',
   boxShadow: '1px 1px 5px black',
-  cardBgColor: '#ADD9F4',
-  fontColor: '#101419',
+  cardBgColor: '#6B9AC4',
+  fontColor: '#FFEA16',
   fontFamily: 'sans-serif',
-  secondaryColor: '#984447',
+  secondaryColor: '#650d1b',
 };
 
 const GlobalStyles = createGlobalStyle`
