@@ -4,19 +4,18 @@ import ReactDOM from 'react-dom';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const theme = {
-  richBlack: '#101419',
-  steelTeal: '#468c98',
-  queenBlue: '#476C9B',
-  uranianBlue: '#ADD9F4',
-  cordovan: '#984447',
-  fontFamily: 'sans-serif',
+  appBgColor: '#476C9B',
   borderRadius: '.5em',
   boxShadow: '1px 1px 5px black',
+  cardBgColor: '#ADD9F4',
+  fontColor: '#101419',
+  fontFamily: 'sans-serif',
+  navBgColor: '#984447',
 };
 
 const GlobalStyles = createGlobalStyle`
 body {
-  background-color: ${(props) => props.theme.queenBlue}
+  background-color: ${(props) => props.theme.appBgColor}
 }`;
 
 ReactDOM.render(

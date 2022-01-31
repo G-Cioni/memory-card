@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const NavBarStyled = styled.nav`
   align-items: center;
-  background-color: ${(props) => props.theme.cordovan};
+  background-color: ${(props) => props.theme.navBgColor};
   border-radius: ${(props) => props.theme.borderRadius};
   box-shadow: ${(props) => props.theme.boxShadow};
-  color: ${(props) => props.theme.richBlack};
+  color: ${(props) => props.theme.fontColor};
   display: grid;
   grid-template-areas: 'title scoreboard' 'description scoreboard';
   padding: 1.5em 0em;

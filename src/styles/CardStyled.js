@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardStyled = styled.img`
-  background-color: ${(props) => props.theme.uranianBlue};
+  background-color: ${(props) => props.theme.cardBgColor};
   border-radius: ${(props) => props.theme.borderRadius};
   box-shadow: ${(props) => props.theme.boxShadow};
   height: 15em;
