@@ -13,7 +13,7 @@ export const NavBarStyled = styled.nav`
   top: 0.5em;
   @media (max-width: 815px) {
     grid-template-areas: 'logo' 'description' ' scoreboard';
-    top: -8.5em;
+    top: -11.5em;
   }
 `;
 
