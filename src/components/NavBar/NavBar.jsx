@@ -1,14 +1,15 @@
 import React from 'react';
-import { Description, NavBarStyled, Title } from '../../styles/NavbarStyled';
+import { Description, NavBarStyled, Logo } from '../../styles/NavbarStyled';
 import Scoreboard from '../Scoreboard/Scoreboard';
+import logo from '../../images/logo.png';
 
 function NavBar({ bestScore, currentScore }) {
-  const title = 'Memory Card Game';
   const description = `Get points by clicking on an image 
                        but don't click on any more than once!`;
   return (
     <NavBarStyled>
-      <Title>{title}</Title>
+      <Logo src={logo} alt={'Dragon Ball logo'} />
+
       <Description>{description}</Description>
       <Scoreboard bestScore={bestScore} currentScore={currentScore} />
     </NavBarStyled>

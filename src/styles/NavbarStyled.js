@@ -7,28 +7,26 @@ export const NavBarStyled = styled.nav`
   box-shadow: ${(props) => props.theme.boxShadow};
   color: ${(props) => props.theme.fontColor};
   display: grid;
-  grid-template-areas: 'title scoreboard' 'description scoreboard';
-  padding: 1.5em 0em;
+  grid-template-areas: 'logo scoreboard' 'description scoreboard';
+  padding-bottom: 1.5em;
   position: sticky;
   top: 0.5em;
   @media (max-width: 815px) {
-    grid-template-areas: 'title' 'description' ' scoreboard';
+    grid-template-areas: 'logo' 'description' ' scoreboard';
     top: -8.5em;
   }
 `;
 
-export const Title = styled.h1`
-  font-size: 3.5em;
-  grid-area: title;
+export const Logo = styled.img`
+  grid-area: logo;
   justify-self: center;
   margin: 0.2em 0em;
-  @media (max-width: 545px) {
-    text-align: center;
-    font-size: 2.6em;
+  width: 35em;
+  @media (max-width: 597px) {
+    width: 29em;
   }
-  @media (max-width: 400px) {
-    text-align: center;
-    font-size: 2.4em;
+  @media (max-width: 472px) {
+    width: 23em;
   }
 `;
 
