@@ -1,8 +1,8 @@
-# CV Creator
+# Memory Card Game
 
-Create and download your CV
+Test your memory with this card game!
 
-### [Live Preview CV Creator](https://gianlucacioni.github.io/memory-card/)
+### [Live Preview Memory Card](https://gianlucacioni.github.io/memory-card/)
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card)
 
