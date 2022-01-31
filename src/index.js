@@ -16,7 +16,7 @@ const theme = {
 
 const GlobalStyles = createGlobalStyle`
 body {
-  background-color: ${(props) => props.theme.steelTeal}
+  background-color: ${(props) => props.theme.queenBlue}
 }`;
 
 ReactDOM.render(
