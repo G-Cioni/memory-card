@@ -7,7 +7,7 @@ import junior from '../../src/images/junior.png';
 import krillin from '../../src/images/krillin.png';
 import majinBuu from '../../src/images/majin-buu.png';
 import mrSatan from '../../src/images/mr-satan.png';
-import pan from '../../src/images/pan.png';
+import androidC18 from '../../src/images/android-c18.png';
 import trunks from '../../src/images/trunks.png';
 import vegeta from '../../src/images/vegeta.png';
 import uniqid from 'uniqid';
@@ -58,9 +58,9 @@ export const images = {
     image: mrSatan,
     id: uniqid(),
   },
-  pan: {
+  androidC18: {
     name: 'Pan',
-    image: pan,
+    image: androidC18,
     id: uniqid(),
   },
   trunks: {
