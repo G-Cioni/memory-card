@@ -14,13 +14,25 @@ export const NavBarStyled = styled.nav`
 
   @media (max-width: 815px) {
     grid-template-areas: 'logo' 'description' ' scoreboard';
+    top: -14em;
+  }
+  @media (max-width: 597px) {
+    top: -12em;
+  }
+  @media (max-width: 533px) {
+    top: -13em;
+  }
+  @media (max-width: 472px) {
     top: -11.5em;
   }
 
-  @media (max-width: 1000px) {
-    @media (max-height: 500px) {
+  @media (max-height: 500px) {
+    @media (max-width: 1000px) {
       grid-template-areas: 'logo' 'description' ' scoreboard';
-      top: -13.5em;
+
+      @media (min-width: 815px) {
+        top: -14em;
+      }
     }
   }
 `;
