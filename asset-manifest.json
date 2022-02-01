@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/memory-card/static/js/main.706a96eb.js",
-    "static/media/frieza.png": "/memory-card/static/media/frieza.490b2aeff65ec1ed786d.png",
-    "static/media/mr-satan.png": "/memory-card/static/media/mr-satan.cf7f6cc139eb157dbe0d.png",
-    "static/media/vegeta.png": "/memory-card/static/media/vegeta.133d217fd008c8b3511a.png",
-    "static/media/goku.png": "/memory-card/static/media/goku.142d53dcd534d28bf607.png",
-    "static/media/majin-buu.png": "/memory-card/static/media/majin-buu.d4d0ce7ed175f6132034.png",
-    "static/media/krillin.png": "/memory-card/static/media/krillin.cd824bc04519c5673845.png",
-    "static/media/pan.png": "/memory-card/static/media/pan.16831bddb5b5b8841d1d.png",
-    "static/media/bulma.png": "/memory-card/static/media/bulma.184d4f434fb6e7747681.png",
-    "static/media/junior.png": "/memory-card/static/media/junior.ef8aa8594e3d0536b28a.png",
-    "static/media/trunks.png": "/memory-card/static/media/trunks.77cdb202bfbf96cc01f2.png",
-    "static/media/gohan.png": "/memory-card/static/media/gohan.c9bf53050cc930f2a9f7.png",
+    "main.js": "/memory-card/static/js/main.263f09f7.js",
+    "static/media/frieza.png": "/memory-card/static/media/frieza.9548e5af06db685403a0.png",
+    "static/media/cell.png": "/memory-card/static/media/cell.ee539ace394a055ac44b.png",
+    "static/media/mr-satan.png": "/memory-card/static/media/mr-satan.4ecdb8321389cc7894b9.png",
     "static/media/logo.png": "/memory-card/static/media/logo.a6c2b09e446fd56e14f6.png",
-    "static/media/cell.png": "/memory-card/static/media/cell.9b4ae6e64214ab5bb2d9.png",
+    "static/media/goku.png": "/memory-card/static/media/goku.89ca0388ade0b1e5dc1b.png",
+    "static/media/junior.png": "/memory-card/static/media/junior.de408b769729b4f67252.png",
+    "static/media/krillin.png": "/memory-card/static/media/krillin.00759eac66a2fe1ba2ff.png",
+    "static/media/android-c18.png": "/memory-card/static/media/android-c18.1e42540505d04d1dfaef.png",
+    "static/media/vegeta.png": "/memory-card/static/media/vegeta.650c6c5988edf1bd67f7.png",
+    "static/media/majin-buu.png": "/memory-card/static/media/majin-buu.3579e1094839a9c15ad0.png",
+    "static/media/trunks.png": "/memory-card/static/media/trunks.d19b208ec3a204bba2f0.png",
+    "static/media/gohan.png": "/memory-card/static/media/gohan.6e9d4ab4bca11c695a89.png",
+    "static/media/bulma.png": "/memory-card/static/media/bulma.42c442f8eff7565fd44f.png",
     "index.html": "/memory-card/index.html",
-    "main.706a96eb.js.map": "/memory-card/static/js/main.706a96eb.js.map"
+    "main.263f09f7.js.map": "/memory-card/static/js/main.263f09f7.js.map"
   },
   "entrypoints": [
-    "static/js/main.706a96eb.js"
+    "static/js/main.263f09f7.js"
   ]
 }
