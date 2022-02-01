@@ -1,4 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, {
+  useState,
+  useEffect,
+  useCallback,
+  useLayoutEffect,
+} from 'react';
 import { CardsStyled } from '../../styles/CardsStyled';
 import Card from './Card';
 import { images } from '../../helpers/images';
@@ -8,7 +13,7 @@ function Cards({ updateTimesClicked }) {
   const [randomNumbers, setRandomNumbers] = useState([]);
   const [scroll, setScroll] = useState(0);
 
-  // Sets random numbers
+  // Updates randomNumbers for cards to be re-sorted in random order.
   const randomizeNumbers = useCallback(() => {
     const randomNumbersArray = [];
 
@@ -42,16 +47,16 @@ function Cards({ updateTimesClicked }) {
     setAllCards(allCardsTemp);
   }, [randomNumbers, randomizeNumbers, scroll, updateTimesClicked]);
 
+  // Sets "scroll" event listener and removes it on unmount.
   useEffect(() => {
     document.addEventListener('scroll', () => setScroll(window.scrollY));
-    return document.removeEventListener(
-      'scroll',
-      () => window.scrollY !== 0 && setScroll(window.scrollY),
+    return document.removeEventListener('scroll', () =>
+      setScroll(window.scrollY),
     );
   }, []);
 
-  useEffect(() => {
-    console.log(window.scrollY, scroll);
+  // Sets scroll right before page rerenders
+  useLayoutEffect(() => {
     window.scrollTo(0, scroll);
   });
   return <CardsStyled>{allCards}</CardsStyled>;
