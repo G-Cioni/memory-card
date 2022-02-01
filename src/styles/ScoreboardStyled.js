@@ -9,6 +9,11 @@ export const ScoreboardStyled = styled.div`
   @media (max-width: 815px) {
     margin-top: 2em;
   }
+  @media (max-width: 1000px) {
+    @media (max-height: 500px) {
+      margin-top: 0em;
+    }
+  }
 `;
 export const BestScore = styled.span`
   font-size: 2em;

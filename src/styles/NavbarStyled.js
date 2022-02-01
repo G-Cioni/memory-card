@@ -11,9 +11,17 @@ export const NavBarStyled = styled.nav`
   padding-bottom: 1.5em;
   position: sticky;
   top: 0.5em;
+
   @media (max-width: 815px) {
     grid-template-areas: 'logo' 'description' ' scoreboard';
     top: -11.5em;
+  }
+
+  @media (max-width: 1000px) {
+    @media (max-height: 500px) {
+      grid-template-areas: 'logo' 'description' ' scoreboard';
+      top: -13.5em;
+    }
   }
 `;
 
@@ -33,6 +41,11 @@ export const Logo = styled.img`
 export const Description = styled.span`
   grid-area: description;
   justify-self: center;
+  @media (max-width: 1000px) {
+    @media (max-height: 500px) {
+      margin-bottom: 2em;
+    }
+  }
   @media (max-width: 545px) {
     text-align: center;
   }
