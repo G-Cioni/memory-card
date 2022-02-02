@@ -8,7 +8,7 @@ export const timesClickedObj = {
   krillin: 0,
   majinBuu: 0,
   mrSatan: 0,
-  pan: 0,
+  androidC18: 0,
   trunks: 0,
   vegeta: 0,
 };
