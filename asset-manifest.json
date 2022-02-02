@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/memory-card/static/js/main.c4b55496.js",
+    "main.js": "/memory-card/static/js/main.11d59f62.js",
     "static/media/mr-satan.png": "/memory-card/static/media/mr-satan.b0bb2a4f37f33d7a38a3.png",
     "static/media/android-c18.png": "/memory-card/static/media/android-c18.15515a4dcd665321a0d3.png",
     "static/media/vegeta.png": "/memory-card/static/media/vegeta.a1668b6479afb9041b14.png",
@@ -15,9 +15,9 @@
     "static/media/gohan.png": "/memory-card/static/media/gohan.6e9d4ab4bca11c695a89.png",
     "static/media/bulma.png": "/memory-card/static/media/bulma.42c442f8eff7565fd44f.png",
     "index.html": "/memory-card/index.html",
-    "main.c4b55496.js.map": "/memory-card/static/js/main.c4b55496.js.map"
+    "main.11d59f62.js.map": "/memory-card/static/js/main.11d59f62.js.map"
   },
   "entrypoints": [
-    "static/js/main.c4b55496.js"
+    "static/js/main.11d59f62.js"
   ]
 }
