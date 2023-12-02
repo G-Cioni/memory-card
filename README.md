@@ -2,7 +2,7 @@
 
 Test your memory with this card game!
 
-### [Live Preview Memory Card](https://gianlucacioni.github.io/memory-card/)
+### [Live Preview Memory Card](https://g-cioni.github.io/memory-card/)
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card)
 
